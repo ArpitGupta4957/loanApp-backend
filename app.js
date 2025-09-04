@@ -11,13 +11,10 @@ app.use(bodyParser.json());
 
 app.post('/get-stream-token', (req, res) => {
   // Use phone number as userId
-  const userId = req.body.userId; // This should be the phone number
-  if (!userId) {
-    return res.status(400).json({ error: 'userId is required' });
-  }
   const serverClient = StreamChat.getInstance(apiKey, apiSecret);
-  // Generate Stream token using phone number
-  const token = serverClient.createToken(userId);
+    // Always use fixed userId '2026'
+    const userId = '2026';
+    const token = serverClient.createToken(userId);
   res.json({ token });
 });
 
