@@ -4,7 +4,7 @@
 const StreamChat = require('stream-chat').StreamChat;
 
 const apiKey = 'pc75euj8pznv'; // Your Stream API key
-const apiSecret = 'ur key here'; // Replace with your Stream secret
+const apiSecret = 'krxm3tvrra5naqeefeg65uyzvry4ujd6pht6yq3jux33k53xr9p4gbd4qrpt274c'; // Replace with your Stream secret
 
 // Use phone number as userId
 const userId = process.argv[2] || '1420011'; // Pass phone number as argument
